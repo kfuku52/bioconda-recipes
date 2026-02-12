@@ -11,6 +11,7 @@ source:
 
 build:
   number: 0
+  skip: true  # [aarch64 or arm64]
   script:
     - export LDFLAGS="${LDFLAGS} -L${PREFIX}/lib"
     - export CPPFLAGS="${CPPFLAGS} -I${PREFIX}/include -I$(python -c 'import numpy; print(numpy.get_include())')"
@@ -62,8 +63,5 @@ about:
 extra:
   recipe-maintainers:
     - kfuku52
-  additional-platforms:
-    - linux-aarch64
-    - osx-arm64
   identifiers:
     - doi:10.1038/s41559-022-01932-7
