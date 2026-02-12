@@ -24,7 +24,7 @@ requirements:
     - wheel
   run:
     - python >=3.9
-    - ete4 >=4.4.0
+    - ete4 >=4.3.0
     - biopython
     - pandas
     - requests
