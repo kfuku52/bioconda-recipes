@@ -1,5 +1,5 @@
 {% set name = "amalgkit" %}
-{% set version = "0.12.20" %}
+{% set version = "0.14.0" %}
 
 package:
   name: "{{ name|lower }}"
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://github.com/kfuku52/{{ name }}/archive/refs/tags/v{{ version }}.tar.gz
-  sha256: f7eac10913f0e8f0752d8b3db19b6373bde510030b042da110078c9774f6bb59
+  sha256: d5558cd419c8d46bdc958064cb97f963d1ea793866414c025906ec15033512ed
 
 build:
   number: 0
@@ -28,28 +28,20 @@ requirements:
     - biopython
     - numpy
     - pandas
-    - lxml
     - ete4
     # Additional dependencies for amalgkit
     - seqkit
-    - parallel-fastq-dump
+    - sra-tools
     - fastp
     - kallisto
+    - busco
+    - compleasm
     - r-base
     - bioconductor-edger
     - r-ggplot2
-    - bioconductor-pcamethods
-    - r-colorspace
-    - r-rcolorbrewer
     - bioconductor-sva
     - bioconductor-ruvseq
-    - r-mass
-    - r-nmf
-    - r-dendextend
-    - r-amap
-    - r-pvclust
     - r-rtsne
-    - r-patchwork
 
 test:
   commands:
