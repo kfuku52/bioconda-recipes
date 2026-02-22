@@ -39,7 +39,7 @@ requirements:
     - r-ggplot2
     - bioconductor-sva
     - r-rtsne
-    # Optional dependencies:
+    # Optional runtime dependencies:
     # - busco, compleasm (required only for `amalgkit busco`)
     # - bioconductor-ruvseq (required only for `amalgkit curate --batch_effect_alg ruvseq`)
 
